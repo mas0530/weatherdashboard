@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <main class="container-fluid ">
+        <header class="jumbotronHeader container-fluid">
+            <h1>Weather Dashboard</h1>
+            <p class="lead"> Upcoming Weather for the Week</p>
+            <p id="currentDate" class="lead"></p>
+        </header>
+
+        <div class="container-fluid flex-wrap">
+            <div class="row flex-wrap" id="row1id">
+                <section class="todaysWeatherSection col-9 container-fluid flex-wrap" id="todaysWeatherId">
+                    <h2 class="h2" id="todaysWeatherHeading">Today's Weather</h2>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 justify-content-center" id="conditions-icon">
+                            </div>
+                            <div class="col-md-8 flex-wrap" id="todays-container">
+                                <ul class="city-data-el" id="city-data">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="navigationSection col-3 container-fluid flex-wrap" id="navigationId">
+                    <h2 class="h2" id="navigationHeading">Searches</h2>
+                    <p class="navigationStep">Weather for the week!</p>
+                    <nav class="navbar navbar-light justify-content-center flex-wrap">
+                        
+                        <form class="d-flex search-Form flex-wrap">
+                            <input class="form-control me-2" id="search-input" type="search" placeholder="search"
+                                aria-label="search">
+                            <button class="btn btn-outline-success bg-white" id="search-button" type="submit">
+                                <i class="fas fa-search" alt="magnifying glass icon"></i>Search</button>
+                        </form>
+                        
+                        <p class="pastSearchesHeading" id="pastSearchesHeading">Past Searches</p>
+                        <ul class="searchHistoryList" id="search-list">
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="row flex-wrap" id="row2id">
+                
+                <section class="forecastWeatherClass container-fluid flex-wrap" id="forecastWeatherId">
+                    <h2 class="h2" id="forecastWeatherHeading">7-day Weather Forecast</h2>
+                    <div class="card-group">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="./assets/js/style.js"></script>
+</body>
+
+</html>

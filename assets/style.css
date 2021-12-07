@@ -1,0 +1,60 @@
+main {
+    background-color: blueviolet;
+    height: 100%;
+}
+
+.jumbotronHeader {
+    border-bottom: 2px solid black;
+    background-color:rgb(148, 224, 217);
+    text-align: center;
+    padding: 5px;
+}
+
+.navbar {
+    display: inline;
+}
+section {
+    border: .5px solid blue;
+    margin: 5px;
+    background-color:rgb(121, 180, 180);
+    text-align:center;
+    align-content:center;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding:25px;
+    float: none;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: orchid;
+}
+
+#todays-container {
+    width: 15px;
+    border-radius: 5px;
+    padding: 15px 0px;
+}
+
+img{
+    padding: 1em;
+}
+
+li {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.favorable {
+    background-color:rgb(66, 156, 66);
+}
+
+.moderate {
+    background-color:rgb(243, 243, 109);
+}
+
+.severe {
+    background-color:rgb(165, 70, 70);
+}
